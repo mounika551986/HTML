@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <audio preload="metadata" controls>
+    <source src="https://www.soundhelix.com/examples/mp3/ng-1.mpSoundHelix-So3" type="audio/mpeg">
+            
+        </audio>
+        <video autoplay muted controls>
+            <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/mfEzmGnPqBg?si=abF2b_neT3baRUgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        </video>
+        <video width="640" height="360" poster="preview.jpg" controls autoplay muted loop>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<!-- tables -->
+ <br>
+
+ Employee details
+ <table border="1">
+ <tr>
+    <th>name</th>
+    <th>age</th>
+    <th>city</th>
+    <th>salary</th>
+ </tr>
+ <tr>
+    <td>mounika</td>
+    <td>25</td>
+    <td>hyderabad</td>
+    <td>40k</td>
+ </tr>
+ <tr>
+    <td>rahul</td>
+    <td>26</td>
+    <td>maharashtra</td>
+    <td rowspan="2">20k</td>
+ </tr>
+ <tr>
+    <td>myra</td>
+    <td>25</td>
+    <td>warangal</td>
+ </tr>
+ <tr>
+    <td colspan="3">Total salaries:</td>
+    <td>60k</td>
+ </tr>
+</table>
+<table>
+
+
+  <caption>Monthly Expenses</caption>
+  <table border="1">
+  <tr>
+    <th>Item</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Rent</td>
+    <td>$1200</td>
+  </tr>
+
+  <tr>
+    <td>Utilities</td>
+    <td>$150</td>
+  </tr>
+</table>
+
+<!-- forms -->
+<br>
+<hr>
+
+    <h3> Registratio form sign in</h3>
+<forms>
+    <label>username :</label>
+    <input type="email" placeholder="@gmail.com">
+<br>
+<br>
+<label>password:</label>
+<input type="password">
+<br>
+<br>
+<button type="submit">submit</button>
+<br>
+<br>
+
+<form action="/register" method="POST" autocomplete="on">
+  
+  <!-- Username with length limits and autofocus -->
+  <div>
+    <label for="username">Username (5-15 chars):</label>
+    <input type="text" id="username" name="username" minlength="5" maxlength="15" autofocus required>
+  </div>
+
+  <!-- Ticket Quantity with min/max and step rules -->
+  <div>
+    <label for="tickets">Tickets (Max 5, pairs only):</label>
+    <input type="number" id="tickets" name="tickets" min="2" max="6" step="2" value="2">
+  </div>
+
+  <!-- Promo Code with pattern validation (3 capital letters) -->
+  <div>
+    <label for="promo">Promo Code (e.g., ABC):</label>
+    <input type="text" id="promo" name="promo" pattern="[A-Z]{3}" placeholder="XYZ">
+  </div>
+
+  <!-- File Upload allowing multiple files -->
+  <div>
+    <label for="docs">Upload Receipts:</label>
+    <input type="file" id="docs" name="docs" multiple>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+</forms>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
